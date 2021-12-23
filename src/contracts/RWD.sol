@@ -1,9 +1,9 @@
 pragma solidity ^0.5.0;
 
-contract Tether {
+contract RWD {
 
-    string public name = 'Mock Tether Token';
-    string public symbol = 'mUSDT';
+    string public name = 'Reward Token';
+    string public symbol = 'RWD';
     uint public totalSupply = 1000000000000000000000000; //1 million tokens
     uint public decimals = 18;
 
@@ -40,7 +40,7 @@ contract Tether {
         return true;
     }
 
-    function transferFrom (address _from, address _to, uint _value) public returns (bool success) {
+    function transferFrm (address _from, address _to, uint _value) public returns (bool success) {
         require(_value <= balanceOf[_from]);
         require(_value <= allowance[_from][msg.sender]);
         balanceOf[_from] -= _value;
