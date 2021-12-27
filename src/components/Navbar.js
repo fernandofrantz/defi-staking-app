@@ -9,6 +9,7 @@ class Navbar extends Component {
         style={{ backgroundColor: "black", height: "50px" }}
       >
         <a
+          href=""
           className="navbar-brand col-sm-3 col-ms-2 mr-0"
           style={{ color: "white" }}
         >
