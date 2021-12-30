@@ -27,8 +27,6 @@ class Airdrop extends Component {
         }
     }
 
-
-
     secondsToTime(secs) {
         let hours, seconds, minutes
         hours = Math.floor(secs / (60*60))

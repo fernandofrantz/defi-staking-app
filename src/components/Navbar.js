@@ -6,7 +6,7 @@ class Navbar extends Component {
     return (
       <nav
         className="navbar navbar-dark fixed-top shadow p-0"
-        style={{ backgroundColor: "black", height: "50px" }}
+        style={{ backgroundColor: "#1D0026", height: "50px", borderBottom: '1px solid #960E8E' }}
       >
         <a
           href=""

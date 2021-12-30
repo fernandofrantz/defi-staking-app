@@ -4,9 +4,8 @@ import Airdrop from "./Airdrop";
 
 class Main extends Component {
   render() {
-    console.log(this.props.tetherBalance)
     return (
-        <div id="content" className="mt-3">
+        <div id="content" className="mt-3" >
             <table className="table text-muted text-center">
                 <thead>
                     <tr style={{color:'whitesmoke'}}>
@@ -21,7 +20,7 @@ class Main extends Component {
                     </tr>
                 </tbody>
             </table>
-            <div className="card mb-2" style={{opacity:'.9'}}>
+            <div className="card mb-2 bg-light" style={{opacity:'.9', padding: '15px', border: '2px solid gray' }}>
                 <form 
                 className="mb-3"
                 onSubmit={(event) => {
@@ -32,16 +31,22 @@ class Main extends Component {
                 }}
                 >
                     <div style={{borderSpace:'0 1em'}}>
-                        <label className="float-left" style={{marginLeft: '15px'}}>
-                            <b>
+                        <label className="float-left" style={{marginLeft: '15px', marginTop: '15px'}}>
+                            <h4>
                                 Stake Tokens
-                            </b>
+                            </h4>
                         </label>
                         <span className="float-right" style={{marginRight:'8px'}}>
-                            Balance: {window.web3.utils.fromWei(this.props.tetherBalance, 'Ether')}
+                            <h4>
+                                Balance:
+                            </h4>
+                            <h5>
+                                {window.web3.utils.fromWei(this.props.tetherBalance, 'Ether')} 
+                                &nbsp;ETH
+                            </h5>
                         </span>
                         <div className="input-group mb-4">
-                            <input ref={(input) => this.input = input} type='text' placeholder="0" required />
+                            <input ref={(input) => this.input = input} type='text' placeholder="0" required style={{marginLeft: '15px'}}/>
                             <div className="input-group-open">
                                 <div className="input-group-text">
                                     <img src={tether} alt='' height='32'></img>

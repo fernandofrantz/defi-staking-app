@@ -12,7 +12,7 @@ class ParticleSettings extends Component {
                     options={{
                         background: {
                             color: {
-                                value: '#0d47a1'
+                                value: '#1D0026'
                             },
                         },
                         fpsLimit:120,
@@ -37,7 +37,7 @@ class ParticleSettings extends Component {
                                     size: 40,
                                 },
                                 push: {
-                                    quantity: 4
+                                    quantity: 5
                                 },
                                 repulse: {
                                     distance: 150,
@@ -47,10 +47,10 @@ class ParticleSettings extends Component {
                         }, 
                         particles: {
                             color: {
-                                value: '#ffffff'
+                                value: '#960E8E'
                             },
                             links: {
-                                color: '#ffffff',
+                                color: '#960E8E',
                                 distance: 200,
                                 enable: true,
                                 opacity: 0.6,
